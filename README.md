@@ -16,7 +16,6 @@
     <li><strong>ls</strong>: Melihat isi direktori dengan dukungan file tersembunyi</li>
     <li><strong>find</strong>: Mencari file berdasarkan nama</li>
     <li><strong>grep</strong>: Mencari pola teks dalam file (rekursif dan case-insensitive opsional)</li>
-    <li><strong>Output berwarna</strong></li>
     <li><strong>Penanganan error yang baik</strong> (tanpa <code>.unwrap()</code> atau <code>.expect()</code>)</li>
   </ul>
 
