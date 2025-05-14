@@ -1,63 +1,62 @@
-## die4Utils
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h3>die4Utils</h3>
 
-**die4Utils** adalah kumpulan utilitas baris perintah ala Unix, ditulis dengan Rust 2024 edition.  
-Mencakup: `echo`, `cat`, `ls`, `find`, dan `grep`.  
+  <p2><strong>die4Utils</strong> adalah kumpulan utilitas baris perintah ala Unix, ditulis dengan Rust 2024 edition.<br>
+  Mencakup: <code>echo</code>, <code>cat</code>, <code>ls</code>, <code>find</code>, dan <code>grep</code>.</p2>
 
+  <h3>Fitur</h3>
+  <ul>
+    <li><strong>echo</strong>: Menampilkan teks ke output</li>
+    <li><strong>cat</strong>: Menampilkan isi file dengan opsi penomoran baris</li>
+    <li><strong>ls</strong>: Melihat isi direktori dengan dukungan file tersembunyi</li>
+    <li><strong>find</strong>: Mencari file berdasarkan nama</li>
+    <li><strong>grep</strong>: Mencari pola teks dalam file (rekursif dan case-insensitive opsional)</li>
+    <li><strong>Output berwarna</strong></li>
+    <li><strong>Penanganan error yang baik</strong> (tanpa <code>.unwrap()</code> atau <code>.expect()</code>)</li>
+  </ul>
 
-### Fitur  
-  
-- **echo**: Menampilkan teks ke output  
-- **cat**: Menampilkan isi file dengan opsi nomor baris  
-- **ls**: Melihat isi direktori dengan opsi file tersembunyi  
-- **find**: Mencari file berdasarkan nama  
-- **grep**: Mencari pola teks dalam file (rekursif dan case-insensitive opsional)  
-- **Output berwarna** dan penanganan error yang baik  
-  
-### Instalasi  
-**1. Persyaratan**
+  <h3>Persyaratan: </h3>
+  <ul>
+    <li><a href="https://www.rust-lang.org/learn/get-started" target="_blank">Rust dan cargo melalui rustup</a></li>
+  </ul>
 
-  • [rustup](https://www.rust-lang.org/learn/get-started)  
-    
-**2. Jalankan**
+  <h3>Langkah Instalasi: </h3>
+  <pre><code>git clone https://github.com/die4kv/die4Utils.git
+cd die4Utils
+chmod +x ./install.sh
+./install.sh</code></pre>
 
-```bash  
-git clone https://github.com/die4kv/die4Utils.git  
-cd die4Utils 
-cargo build --release  
-```
+  <h3>Opsional Install: </h3>
+  <pre><code>
+    Usage: ./install.sh [OPTIONS]    
+     Options:
+        --local           Install to $HOME/.cargo/bin
+        --global          Install to /usr/local/bin
+        --shell [bash|zsh|fish]  Set PATH in shell config (only for --local)
+        -h, --help        Show this help message
+  </code></pre>
 
-**3. Harus**  
+  <hr>
 
-**• local**  
-  
-- contoh untuk menggunakannya hanya di ~/Documents:   
-```
-cp -r ./target/release/die4Utils ~/Documents  
-  
-```
-- gunakan ./die4Utils untuk menjalankannya
+  <h3>Cara Penggunaan</h3>
+  <p2>Jalankan:</p2>
+  <pre><code>die4Utils --help</code></pre>
 
-**• global**
+  <hr>
 
-- pastikan  ~/.local/bin sudah dalam PATH:
-```
-cp -r ./target/release/die4Utils ~/.local/bin
+  <h3>Testing</h3>
+  <p2>Untuk menjalankan pengujian:</p2>
+  <pre><code>cargo test</code></pre>
 
-```
+  <hr>
 
-**• Cara Penggunaan**  
-    
-  
-  **Use**: die4Utils --help  
-  
-     
-jika ada masalah saat instalasi report ke [sini](https://github.com/die4kv/die4Utils/issues)  
-  
-  
-  
-### Testing
-
-```
-cargo test
-  
-```
+  <h3>Laporan Masalah</h3>
+  <p2>Jika mengalami kendala saat instalasi atau penggunaan, silakan laporkan ke:<br>
+  <a href="https://github.com/die4kv/die4Utils/issues" target="_blank">https://github.com/die4kv/die4Utils/issues</a></p2>
+</body>
+</html>
