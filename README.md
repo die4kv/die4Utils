@@ -15,8 +15,7 @@
     <li><strong>cat</strong>: Menampilkan isi file dengan opsi penomoran baris</li>
     <li><strong>ls</strong>: Melihat isi direktori dengan dukungan file tersembunyi</li>
     <li><strong>find</strong>: Mencari file berdasarkan nama</li>
-    <li><strong>grep</strong>: Mencari pola teks dalam file (rekursif dan case-insensitive opsional)</li>
-    <li><strong>Penanganan error yang baik</strong> (tanpa <code>.unwrap()</code> atau <code>.expect()</code>)</li>
+    <li><strong>grep</strong>: Mencari pola teks dalam file </li> 
   </ul>
 
   <h3>Persyaratan: </h3>
